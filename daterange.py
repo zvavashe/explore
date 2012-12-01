@@ -14,7 +14,7 @@ class DateRange(object):
         """
         Creates a date range with the given start_date and end_date. Assumes
         that end_date >= start_date. This class does not support open-ended
-        date ranges, that is date range without a specified end date.
+        date ranges, that is date ranges without a specified end date.
         """
         self.start_date = start_date
         self.end_date = end_date
