@@ -25,7 +25,8 @@ class DefaultIncomeTaxCalculator(object):
         
         income_tax = 0
         for tax_bracket in self.tax_brackets:
-            income_tax = income_tax + self.calculate_bracket_tax(taxable_income, tax_bracket) 
+            income_tax += self.calculate_bracket_tax(taxable_income, 
+                                                     tax_bracket) 
         
         return income_tax  
                 
