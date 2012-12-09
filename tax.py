@@ -44,9 +44,7 @@ class DefaultIncomeTaxCalculator(object):
         """
         
         if self.is_applicable(taxable_income, tax_bracket):            
-            lower_limit = tax_bracket[0]
-            upper_limit = tax_bracket[1]
-            tax_rate = tax_bracket[2]
+            lower_limit, upper_limit, tax_rate = tax_bracket
             if upper_limit and upper_limit <= taxable_income:
                 return (upper_limit - lower_limit) * tax_rate
             else:
