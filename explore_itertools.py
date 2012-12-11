@@ -17,7 +17,7 @@ things = [('animal', 'bear'), ('animal', 'duck'), ('plant', 'catcus'),
 for key, group in groupby(things, lambda x: x[0]):
     print list(group)
 
-#The above example is not very good though because the things list is already 
+#The above example is not a very good though because the things list is already 
 #sorted and one may end up wrongly assuming that the function works as expected 
 #even when passed an unsorted list of things. Thus, the next example shows how
 #to use the groupby function when starting off with a list that has not yet been sorted.
