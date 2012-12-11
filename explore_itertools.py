@@ -18,9 +18,9 @@ for key, group in groupby(things, lambda x: x[0]):
     print list(group)
 
 #The above example is not very good though because the things list is already 
-#sorted and one may end up wrongly assuming that function works  expected even 
-#when passed an unsorted list of things. Thus the next #example to show how the 
-#groupby function when starting off with an list that has not yet been sorted.
+#sorted and one may end up wrongly assuming that function works as expected 
+#even when passed an unsorted list of things. Thus, the next example shows how
+#to use the groupby function when starting off with a list that has not yet been sorted.
 unsorted_things = [('vehicle', 'school bus'), ('animal', 'duck'), 
                    ('vehicle', 'speed boat'), ('animal', 'bear'), 
                    ('plant', 'catcus')]
