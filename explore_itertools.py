@@ -28,7 +28,7 @@ unsorted_things = [('vehicle', 'school bus'), ('animal', 'duck'),
 #sort elements by thing type before applying the groupby function
 sorted_things = sorted(unsorted_things, key = lambda x : x[0])
 
-#confirm that the groupby functions returns the groups in the right order.
+#confirm that the groupby function returns the groups in the right order.
 seen_groups = []
 for key, group in groupby(sorted_things, lambda x : x[0]):
     if key not in seen_groups:
