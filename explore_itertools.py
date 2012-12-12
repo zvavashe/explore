@@ -3,7 +3,7 @@ I wrote this code simply to explore the standard itertools module's
 functionality. 
 
 It may appear that this code is over commented but that is not the case. Most
-the 'comments' are just notes to myself. 
+of the 'comments' are just notes to myself. 
 """
 
 from itertools import groupby
