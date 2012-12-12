@@ -36,7 +36,7 @@ class DateRange(object):
     def overlaps(self, other):
         """
         Checks whether this date range overlaps for at least one day with
-        another date range. Returns true if this date range overlap with the
+        another date range. Returns true if this date range overlaps with the
         other date range.
         """
         return (self.includes(other.start_date) 
