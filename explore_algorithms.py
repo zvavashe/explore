@@ -7,6 +7,12 @@ def bubble_sort(l):
     Bubble sort is known to be inefficient when sorting a large of data. The
     algorithm does not scale well - It has worst case and average complexity of
     O(n^2).
+    
+    The way it works:
+    (1) Go through the elements of the list swapping elements for each case 
+    where an element is less than its predecessor.
+    (2) Repeat the above process until you can go through the whole list 
+    without swapping any elements.
     """
     if len(l) in (0, 1):
         return l[:]
